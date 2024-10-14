@@ -1,4 +1,4 @@
-/* =================================================================== 
+/* ===================================================================
  * Khronos Main Stylesheet
  * Template Ver. 2.0.0
  * 07-03-2021
@@ -6,21 +6,21 @@
  *
  * TOC:
  * # SETTINGS
- *      ## fonts 
+ *      ## fonts
  *      ## colors
  *      ## spacing and typescale
  *      ## grid variables
  * # NORMALIZE
  * # BASE SETUP
  * # GRID
- *      ## large screen devices 
+ *      ## large screen devices
  *      ## medium screen devices
- *      ## tablet devices 
- *      ## mobile devices 
- *      ## small screen devices 
+ *      ## tablet devices
+ *      ## mobile devices
+ *      ## small screen devices
  *      ## additional column stackpoints
  * # UTILITY CLASSES
- * # TYPOGRAPHY 
+ * # TYPOGRAPHY
  *      ## base type styles
  *      ## additional typography & helper classes
  *      ## lists
@@ -34,7 +34,7 @@
  * # TABLE
  * # COMPONENTS
  *      ## pagination
- *      ## alert box 
+ *      ## alert box
  *      ## skillbars
  *      ## stats tabs
  * # PROJECT-WIDE SHARED STYLES
@@ -54,7 +54,7 @@
  * # INFO
  *      ## info bg
  *      ## tabs
- *      ## services 
+ *      ## services
  *      ## MailChimp form
  * # FOOTER
  *      ## footer social
@@ -70,8 +70,8 @@
  *
  * ------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------- 
- * ## fonts 
+/* -------------------------------------------------------------------
+ * ## fonts
  * ------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
@@ -82,7 +82,7 @@
     --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## colors
  * ------------------------------------------------------------------- */
 :root {
@@ -90,7 +90,7 @@
     /* color-1(#034E4A)
      * color-2(#A33B20)
      */
-    --color-1                      : hsla(177, 93%, 16%, 1);
+    --color-1                      : hsla(238, 44%, 16%, 8);
     --color-2                      : hsla(12, 67%, 38%, 1);
 
     /* theme color variations
@@ -105,7 +105,7 @@
     --color-2-darker               : hsla(12, 67%, 18%, 1);
 
     /* feedback colors
-     * color-error(#ffd1d2), color-success(#c8e675), 
+     * color-error(#ffd1d2), color-success(#c8e675),
      * color-info(#d7ecfb), color-notice(#fff099)
      */
     --color-error                  : hsla(359, 100%, 91%, 1);
@@ -117,9 +117,9 @@
     --color-info-content           : hsla(205, 32%, 31%, 1);
     --color-notice-content         : hsla(51, 30%, 30%, 1);
 
-    /* shades 
-     * generated using 
-     * Tint & Shade Generator 
+    /* shades
+     * generated using
+     * Tint & Shade Generator
      * (https://maketintsandshades.com/)
      */
     --color-black                  : #000000;
@@ -179,13 +179,13 @@
     --border-radius                : 3px;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## spacing and typescale
  * ------------------------------------------------------------------- */
 :root {
 
     /* spacing
-     * base font size: 18px 
+     * base font size: 18px
      * vertical space unit : 32px
      */
     --base-size        : 62.5%;
@@ -193,7 +193,7 @@
     --base-font-size   : calc(1.8rem * var(--multiplier));
     --space            : calc(3.2rem * var(--multiplier));
 
-    /* vertical spacing 
+    /* vertical spacing
      */
     --vspace-0_125     : calc(0.125 * var(--space));
     --vspace-0_25      : calc(0.25 * var(--space));
@@ -250,7 +250,7 @@
     --vspace-btn       : var(--vspace-2);
 }
 
-/* on mobile devices below 600px, change the value of '--multiplier' 
+/* on mobile devices below 600px, change the value of '--multiplier'
  * to adjust the values of base font size and vertical space unit.
  */
 @media screen and (max-width: 600px) {
@@ -259,7 +259,7 @@
     }
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## grid variables
  * ------------------------------------------------------------------- */
 :root {
@@ -581,18 +581,18 @@ textarea {
  *
  *
  *   -----------------------------------------------------------------
- * - Grid breakpoints are based on MAXIMUM WIDTH media queries, 
+ * - Grid breakpoints are based on MAXIMUM WIDTH media queries,
  *   meaning they apply to that one breakpoint and ALL THOSE BELOW IT.
- * - Grid columns without a specified width will automatically layout 
+ * - Grid columns without a specified width will automatically layout
  *   as equal width columns.
  *
- * - BLOCK GRID columns(columns inside BLOCK GRID containers) are 
- *   equally-sized columns define at parent/row level. 
+ * - BLOCK GRID columns(columns inside BLOCK GRID containers) are
+ *   equally-sized columns define at parent/row level.
  *   A BLOCK GRID container's class attribute value begins with "block-".
  *
  * ------------------------------------------------------------------- */
 
-/* row 
+/* row
  */
 .row {
     width     : 92%;
@@ -665,7 +665,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## large screen devices 
+ * ## large screen devices
  * -------------------------------------------------------------------- */
 .lg-1 {
     flex  : none;
@@ -763,7 +763,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## medium screen devices 
+ * ## medium screen devices
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 1200px) {
     .md-1 {
@@ -867,7 +867,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## tablet devices 
+ * ## tablet devices
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
     .tab-1 {
@@ -971,7 +971,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## mobile devices 
+ * ## mobile devices
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 600px) {
     .row {
@@ -1086,7 +1086,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## small screen devices 
+ * ## small screen devices
  * --------------------------------------------------------------------*/
 
 /* stack columns on small screen devices
@@ -1112,7 +1112,7 @@ textarea {
 }
 
 /* --------------------------------------------------------------------
- * ## additional column stackpoints 
+ * ## additional column stackpoints
  * -------------------------------------------------------------------- */
 @media screen and (max-width: 1000px) {
 
@@ -1257,10 +1257,10 @@ textarea {
 
 
 /* ===================================================================
- * # TYPOGRAPHY 
+ * # TYPOGRAPHY
  *
  *
- * ------------------------------------------------------------------- 
+ * -------------------------------------------------------------------
  * type scale - ratio 1:2 | base: 18px
  * -------------------------------------------------------------------
  *
@@ -1716,7 +1716,7 @@ dd {
     margin : 0 0 0 2rem;
 }
 
-/* definition list line style 
+/* definition list line style
  */
 .lining dt,
 .lining dd {
@@ -1743,7 +1743,7 @@ dd {
     margin-left : -0.2em;
 }
 
-/* definition list dictionary style 
+/* definition list dictionary style
  */
 .dictionary-style dt {
     display       : inline;
@@ -1794,10 +1794,10 @@ img,
 
 
 
-/* =================================================================== 
+/* ===================================================================
  * # PRELOADER
- * 
- * 
+ *
+ *
  * -------------------------------------------------------------------
  * - markup:
  *
@@ -1867,7 +1867,7 @@ img,
     }
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## page loaded
  * ------------------------------------------------------------------- */
 .ss-loaded #preloader {
@@ -1884,7 +1884,7 @@ img,
 
 
 /* ===================================================================
- * # FORM 
+ * # FORM
  *
  *
  * ------------------------------------------------------------------- */
@@ -2009,7 +2009,7 @@ label>input[type="radio"] {
     top      : 2px;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## style placeholder text
  * ------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
@@ -2044,7 +2044,7 @@ label>input[type="radio"] {
     color : var(--color-placeholder);
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## change autocomplete styles in Chrome
  * ------------------------------------------------------------------- */
 input:-webkit-autofill,
@@ -2364,7 +2364,7 @@ td:last-child {
     background-color : transparent;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * pagination
  * ------------------------------------------------------------------- */
@@ -2374,8 +2374,8 @@ td:last-child {
     }
 }
 
-/* ------------------------------------------------------------------- 
- * ## alert box 
+/* -------------------------------------------------------------------
+ * ## alert box
  * ------------------------------------------------------------------- */
 .alert-box {
     padding       : var(--vspace-0_75) 4rem var(--vspace-0_75) 3.2rem;
@@ -2465,7 +2465,7 @@ td:last-child {
     transition : all .5s;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## skillbars
  * ------------------------------------------------------------------- */
 .skill-bars {
@@ -2685,7 +2685,7 @@ td:last-child {
     word-wrap : normal !important;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## media classes
  * ------------------------------------------------------------------- */
 
@@ -2736,7 +2736,7 @@ img.u-pull-left {
     position        : relative;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * pagewrap
  * ------------------------------------------------------------------- */
@@ -2825,7 +2825,7 @@ img.u-pull-left {
     fill : white;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * header
  * ------------------------------------------------------------------- */
@@ -3202,7 +3202,7 @@ img.u-pull-left {
     left             : 50%;
 }
 
-/* fade in 
+/* fade in
  */
 @-webkit-keyframes vertical {
 
@@ -3311,7 +3311,7 @@ img.u-pull-left {
     bottom           : 0;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * intro
  * ------------------------------------------------------------------- */
@@ -3506,8 +3506,8 @@ img.u-pull-left {
     top                        : 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## services 
+/* -------------------------------------------------------------------
+ * ## services
  * ------------------------------------------------------------------- */
 .services-list {
     margin-top : var(--vspace-1_5);
@@ -3530,7 +3530,7 @@ img.u-pull-left {
     fill : var(--color-1);
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## MailChimp form
  * ------------------------------------------------------------------- */
 .mc-form input[type="email"] {
@@ -3550,7 +3550,7 @@ img.u-pull-left {
     line-height : var(--vspace-0_75);
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * info
  * ------------------------------------------------------------------- */
@@ -3678,7 +3678,7 @@ img.u-pull-left {
     fill : white;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * ## go top
  * ------------------------------------------------------------------- */
 .ss-go-top {
@@ -3743,7 +3743,7 @@ img.u-pull-left {
     display : none;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * footer
  * ------------------------------------------------------------------- */
