@@ -5,7 +5,7 @@
     const cfg = {
 
         // Countdown Timer Final Date
-        finalDate : 'March 20, 2024 00:00:00',
+        finalDate : 'December 31, 2024 23:59:59',
         // MailChimp URL
         mailChimpURL : 'https://facebook.us1.list-manage.com/subscribe/post?u=1abf75f6981256963a47d197a&amp;id=37c6d8f4d6'
 
@@ -71,11 +71,8 @@
             const now = new Date().getTime();
             let diff = finalDate - now;
 
-            if (diff <= 0) {
-                if (timeInterval) {
-                    clearInterval(timeInterval);
-                }
-                return;
+            if (diff < 0) {
+                diff = 0;  // Ensure we don't show negative values
             }
 
             let days = Math.floor( diff/(1000*60*60*24) );
@@ -91,9 +88,9 @@
                 }
             }
 
-            hours <= 9 ? hours = '0' + hours : hours;
-            minutes <= 9 ? minutes = '0' + minutes : minutes;
-            seconds <= 9 ? seconds = '0' + seconds : seconds;
+            hours = hours <= 9 ? '0' + hours : hours;
+            minutes = minutes <= 9 ? '0' + minutes : minutes;
+            seconds = seconds <= 9 ? '0' + seconds : seconds;
 
             daysSpan.textContent = days;
             hoursSpan.textContent = hours;
