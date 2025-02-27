@@ -6,9 +6,8 @@
     padding: 0 var(--vspace-1);
 }
 
-.curriculo-form label,
-.curriculo-form .file-input-label {
-    color: #e0e0e0;
+.curriculo-form label {
+    color: #555;
     font-weight: 500;
 }
 
@@ -75,10 +74,10 @@
 .curriculo-form .file-input-label {
     display: block;
     padding: 1.4rem 1.8rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px dashed rgba(255, 255, 255, 0.25);
+    background-color: rgba(150, 199, 137, 0.08);
+    border: 2px dashed rgba(150, 199, 137, 0.3);
     border-radius: 6px;
-    color: #e0e0e0;
+    color: #555;
     font-size: 1.6rem;
     text-align: center;
     cursor: pointer;
@@ -87,8 +86,8 @@
 }
 
 .curriculo-form .file-input-label:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(150, 199, 137, 0.15);
+    border-color: rgba(150, 199, 137, 0.5);
 }
 
 .curriculo-form input[type="file"] {
@@ -144,7 +143,7 @@
 
 .curriculo-form .privacy-notice {
     font-size: 1.5rem;
-    color: #b0b0b0;
+    color: #666;
     margin-top: 1.8rem;
     line-height: 1.6;
     max-width: 800px;
@@ -239,22 +238,19 @@
         font-size: 1.4rem;
         text-align: center;
         margin-top: 1.5rem;
-        color: #a0a0a0;
+        color: #666;
     }
 }
 
 .form-container {
-  background-color: #111213;
+  background-color: rgba(150, 199, 137, 0.05);
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-  margin-top: 2rem;
+  border: 1px solid rgba(150, 199, 137, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
 }
 
 .form-title {
-  color: #96c789;
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-weight: 500;
+  display: none; /* Ocultar o título duplicado */
 }
