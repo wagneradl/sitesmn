@@ -2819,6 +2819,14 @@ img.u-pull-left {
 .s-header__social svg {
     height : var(--vspace-0_875);
     width  : var(--vspace-0_875);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Ajuste fino para ícones específicos */
+.s-header__social li:nth-child(3) svg,
+.s-header__social li:nth-child(4) svg {
+    transform: scale(0.85);
 }
 
 .s-header__social svg path {
@@ -3492,6 +3500,10 @@ img.u-pull-left {
     overflow   : hidden;
     position   : absolute;
     top        : 4rem;
+    transition-property        : opacity, visibility, top;
+    transition-duration        : .6s;
+    transition-timing-function : cubic-bezier(0.28, 0.12, 0.22, 1);
+    transition-delay           : 0s;
 }
 
 .tab-content__item[data-tab-active] {
@@ -3670,8 +3682,16 @@ img.u-pull-left {
 }
 
 .s-footer__social svg {
-    height : var(--vspace-0_75);
-    width  : var(--vspace-0_75);
+    height : var(--vspace-0_875);
+    width  : var(--vspace-0_875);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Ajuste fino para ícones específicos */
+.s-footer__social li:nth-child(3) svg,
+.s-footer__social li:nth-child(4) svg {
+    transform: scale(0.85);
 }
 
 .s-footer__social svg path {
