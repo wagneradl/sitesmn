@@ -20,13 +20,7 @@ Para o funcionamento correto do site, o servidor deve possuir:
 
 ## Processo de Deployment
 
-### 1. Preparação dos Arquivos
-
-- Certifique-se de que todos os arquivos do projeto estejam atualizados
-- Verifique se os ícones sociais estão com o tamanho correto
-- Confirme se o CSS e JavaScript estão minificados para melhor performance (opcional)
-
-### 2. Configuração do Formulário PHP
+### 1. Configuração do Formulário PHP
 
 O arquivo `submit-curriculo.php` precisa ser configurado corretamente:
 
@@ -34,7 +28,7 @@ O arquivo `submit-curriculo.php` precisa ser configurado corretamente:
 - Se necessário, ajuste o tamanho máximo do arquivo permitido (`$max_file_size`)
 - Em ambiente de produção, mantenha o log desabilitado (`$log_enabled = false;`) ou ajuste para um local seguro
 
-### 3. Upload para o Servidor
+### 2. Upload para o Servidor
 
 - Faça upload de todos os arquivos mantendo a estrutura de diretórios
 - Certifique-se de que as permissões dos arquivos estão corretas:
@@ -42,7 +36,7 @@ O arquivo `submit-curriculo.php` precisa ser configurado corretamente:
   - Arquivos PHP: 644 (rw-r--r--)
   - Diretórios: 755 (rwxr-xr-x)
 
-### 4. Configuração do Servidor Web
+### 3. Configuração do Servidor Web
 
 #### Para Apache
 
@@ -115,7 +109,7 @@ server {
 }
 ```
 
-### 5. Configuração do PHP
+### 4. Configuração do PHP
 
 Verifique e ajuste o arquivo `php.ini` do servidor para garantir:
 
@@ -133,7 +127,7 @@ smtp_port = 25
 sendmail_from = noreply@seudominio.com.br
 ```
 
-### 6. Configuração do Google Analytics
+### 5. Configuração do Google Analytics
 
 O código do Google Analytics já está inserido no site, mas com um placeholder para o ID:
 
@@ -149,12 +143,12 @@ O código do Google Analytics já está inserido no site, mas com um placeholder
 
 Substitua `G-XXXXXXXXXX` pelo ID real do Google Analytics.
 
-### 7. DNS e Certificados SSL
+### 6. DNS e Certificados SSL
 
 - Configure os registros DNS para apontar para o servidor
 - Instale e configure um certificado SSL (Let's Encrypt é uma opção gratuita)
 
-### 8. Testes Pós-Deployment
+### 7. Testes Pós-Deployment
 
 1. **Teste de Carregamento do Site**
    - Verifique se todas as páginas carregam corretamente
@@ -198,9 +192,6 @@ Consulte o arquivo `SEO_INSTRUCTIONS.md` para orientações detalhadas sobre com
 - Mantenha backups regulares dos arquivos do site
 - Monitore os logs de erro do servidor para identificar problemas
 - Verifique periodicamente se o formulário de contato está funcionando corretamente
-- As cores principais do site estão definidas como variáveis CSS em `css/styles.css`
-- O contador regressivo pode ser ajustado em `js/main.js`
-- As configurações das partículas podem ser ajustadas em `js/particle-settings.js`
 
 ---
 
